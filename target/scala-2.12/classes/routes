@@ -1,0 +1,5 @@
+###
+# parameters:
+#   - name: body
+###
+GET /foo/thing controllers.FooController.doThing(thing: String)
