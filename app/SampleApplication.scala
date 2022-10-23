@@ -1,4 +1,4 @@
-import controllers.{Assets, FooController}
+import controllers.{Assets, AssetsModule, FooController, routes}
 import play.api.{Application, ApplicationLoader, BuiltInComponentsFromContext}
 import play.api.ApplicationLoader.Context
 import play.api.mvc.EssentialFilter
@@ -13,7 +13,7 @@ abstract class SampleApplication(context: Context) extends BuiltInComponentsFrom
 	lazy val fooController: FooController = new FooController(controllerComponents)
 
 	override def router: Router = {
-		new Routes(httpErrorHandler, fooController, Assets, "/")
+		new Routes(httpErrorHandler, fooController, "/")
 	}
 }
 
