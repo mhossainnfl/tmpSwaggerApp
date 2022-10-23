@@ -2,7 +2,6 @@
 # parameters:
 #   - name: body
 ###
-GET /foo/thing controllers.FooController.doThing(thing: String)
-
+GET     /foo/thing           controllers.FooController.doThing(thing: String)
 
 GET     /swagger.json        controllers.Assets.at(path="/public", file="swagger.json")
