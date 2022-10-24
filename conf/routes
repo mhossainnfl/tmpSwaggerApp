@@ -2,4 +2,4 @@
 # parameters:
 #   - name: body
 ###
-GET     /foo/thing           controllers.FooController.doThing(thing: String)
+GET   /foo/thing        controllers.FooController.doThing(thing: String)

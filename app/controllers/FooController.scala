@@ -9,6 +9,7 @@ import scala.concurrent.Future
 
 class FooController(cc: ControllerComponents) extends AbstractController(cc) {
 
+  @Operation(summary = "Get Users")
   def doThing(thing: String) = Action.async {
     Future.successful(Ok(Json.toJson(FooData(1, thing))))
   }

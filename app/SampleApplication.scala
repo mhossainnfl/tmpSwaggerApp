@@ -6,7 +6,6 @@ import play.api.routing.Router
 
 // generated
 import router.Routes
-
 abstract class SampleApplication(context: Context) extends BuiltInComponentsFromContext(context) {
 	override def httpFilters: Seq[EssentialFilter] = Nil
 
